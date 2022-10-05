@@ -9,34 +9,34 @@
   </head>
   <body>
     <div class="calculator">
-      <div class="input" id="input"><input type="text" id="input" /></div>
+      <div class="input"><input type="text" id="input" readonly/><span id="total"></span></div>
       <div class="operators">
-        <div><button>+</button></div>
-        <div><button>-</button></div>
-        <div><button>&times;</button></div>
-        <div><button>&divide;</button></div>
+        <div><button id="plus" value="+" onclick="inputval(this)">+</button></div>
+        <div><button id="minus" value="-" onclick="inputval(this)">-</button></div>
+        <div><button id="multiply" value="*" onclick="inputval(this)">&times;</button></div>
+        <div><button id="divide" value="/" onclick="inputval(this)">&divide;</button></div>
       </div>
       <div class="buttons">
         <div class="leftPanel">
           <div class="numbers">
-            <button>1</button>
-            <button>4</button>
-            <button>7</button>
+            <button id="1" value="1" onclick="inputval(this)">1</button>
+            <button id="4" value="4" onclick="inputval(this)">4</button>
+            <button id="7" value="7" onclick="inputval(this)">7</button>
           </div>
           <div class="numbers">
-            <button>2</button>
-            <button>5</button>
-            <button>8</button>
+            <button id="2" value="2" onclick="inputval(this)">2</button>
+            <button id="5" value="5" onclick="inputval(this)">5</button>
+            <button id="8" value="8" onclick="inputval(this)">8</button>
           </div>
           <div class="numbers">
-            <button>3</button>
-            <button>6</button>
-            <button>9</button>
+            <button id="3" value="3" onclick="inputval(this)">3</button>
+            <button id="6" value="6" onclick="inputval(this)">6</button>
+            <button id="9" value="9" onclick="inputval(this)">9</button>
           </div>
           <div class="numbers">
-            <button>0</button>
-            <button>Clear</button>
-            <button class="equals">Equal</button>
+            <button id="0" value="0" onclick="inputval(this)">0</button>
+            <button onclick="clearfn()">Clear</button>
+            <button onclick="equalfn()" class="equals">Equal</button>
           </div>
         </div>
       </div>
