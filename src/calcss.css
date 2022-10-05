@@ -1,0 +1,45 @@
+/* calculator css file */
+body {
+  margin: 0px;
+}
+.calculator {
+  display: block;
+  width: 21%;
+  margin-left: 40%;
+  margin-right: 30%;
+  margin-top: 10%;
+  border: 2px solid black;
+  box-shadow: 10px 10px 2px 2px lightblue;
+}
+input[type="text"] {
+  width: 210px;
+  height: 45px;
+  text-align: center;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+.buttons {
+  display: block;
+  margin-left: 30px;
+}
+.operators {
+  display: inline-flex;
+}
+.leftPanel {
+  display: block;
+}
+.numbers {
+  display: block;
+}
+.equals {
+  height: 40px;
+  width: 50px;
+  text-align: center;
+  background-color: aqua;
+}
+button {
+  height: 40px;
+  width: 50px;
+  text-align: center;
+  margin: 10px;
+}
