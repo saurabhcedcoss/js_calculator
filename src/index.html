@@ -9,12 +9,28 @@
   </head>
   <body>
     <div class="calculator">
-      <div class="input"><input type="text" id="input" readonly/><span id="total"></span></div>
+      <div class="inputcont">
+        <span  id="dispe"></span>
+        <span id="inputNum"></span>
+      </div>
+      <span id="result"></span>
       <div class="operators">
-        <div><button id="plus" value="+" onclick="inputval(this)">+</button></div>
-        <div><button id="minus" value="-" onclick="inputval(this)">-</button></div>
-        <div><button id="multiply" value="*" onclick="inputval(this)">&times;</button></div>
-        <div><button id="divide" value="/" onclick="inputval(this)">&divide;</button></div>
+        <div>
+          <button id="plus" value="+" onclick="inputval(this)">+</button>
+        </div>
+        <div>
+          <button id="minus" value="-" onclick="inputval(this)">-</button>
+        </div>
+        <div>
+          <button id="multiply" value="*" onclick="inputval(this)">
+            &times;
+          </button>
+        </div>
+        <div>
+          <button id="divide" value="/" onclick="inputval(this)">
+            &divide;
+          </button>
+        </div>
       </div>
       <div class="buttons">
         <div class="leftPanel">
@@ -36,11 +52,13 @@
           <div class="numbers">
             <button id="0" value="0" onclick="inputval(this)">0</button>
             <button onclick="clearfn()">Clear</button>
-            <button onclick="equalfn()" class="equals">Equal</button>
+            <button id="equal" onclick="inputval(this)" class="equals">
+              Equal
+            </button>
           </div>
         </div>
       </div>
     </div>
+    <script src="./calscript.js"></script>
   </body>
-  <script src="./calscript.js"></script>
 </html>
